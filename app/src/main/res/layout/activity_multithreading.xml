@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_multithreading"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mat.rxjavaplayground.activity.MultithreadingActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="A (15s)"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/val_A"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="B (5s)"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/val_B"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="C (5s)"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/val_C"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="D (10s)"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/val_D"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="E (4  s)"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/val_E"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="F (4s)"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/val_F"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

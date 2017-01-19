@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/.idea/
+app/libs/
+app/src/main/java/com/example/mat/rxjavaplayground/rxutil/
+app/src/main/res/drawable/
+/.gradle/

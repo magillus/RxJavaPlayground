@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mat.rxjavaplayground.fragment.SelectorFragment">
+
+    <TextView
+        android:text="Choose demonstration"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_multi_threading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multi-threading" />
+
+    <Button
+        android:id="@+id/btn_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network fetch example" />
+    <Button
+        android:id="@+id/btn_data_fetch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Database fetch" />
+    <Button
+        android:id="@+id/btn_data_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Database update/insert" />
+    <Button
+        android:id="@+id/btn_content_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rx- Content Provider" />
+    <Button
+        android:id="@+id/btn_broadcast_receier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rx- Broadcast Receiver" />
+    <Button
+        android:id="@+id/btn_service_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rx- Service Wrapper" />
+
+</LinearLayout>
