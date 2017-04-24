@@ -78,24 +78,29 @@ public class ContentProviderActivity extends BaseChildActivity {
     protected void onResume() {
         super.onResume();
 
-        Observable<String> observable10 = ContentObserverSubscriber.create(getContentResolver(), TextContentProvider.getRandomStringUri(10),
+        Observable<String> observable10 = ContentObserverSubscriber.create(getContentResolver(),
+                TextContentProvider.getRandomStringUri(10),
                 uri -> TextContentProvider.getRandomString(getContentResolver(), 10))
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .share();// here we do share
 
-        Observable<String> observable20 = ContentObserverSubscriber.create(getContentResolver(), TextContentProvider.getRandomStringUri(20),
+        Observable<String> observable20 = ContentObserverSubscriber.create(getContentResolver(),
+                TextContentProvider.getRandomStringUri(20),
                 uri -> TextContentProvider.getRandomString(getContentResolver(), 20))
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
 
-        compositeDisposable.add(observable10
+        compositeDisposable.add(
+                observable10
                 .subscribe(text -> value10.setText(text)));
 
-        compositeDisposable.add(observable10
+        compositeDisposable.add(
+                observable10
                 .subscribe(text -> Toast.makeText(getApplicationContext(), "size 10: " + text, Toast.LENGTH_LONG).show()));
 
-        compositeDisposable.add(observable20
+        compositeDisposable.add(
+                observable20
                 .subscribe(text -> value20.setText(text)));
 
 

@@ -21,7 +21,7 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * RxJava based broadcast reciever that registers its local BroadcastReceiver until end of subscription.
  * Listens for update and passes Intent to the Stream (Subscriber).
- * <p>
+ * Copyright 2016 Mateusz Perlak - http://www.apache.org/licenses/LICENSE-2.0
  * Created on 11/18/16.
  */
 public class RxBroadcastReceiver implements ObservableOnSubscribe<Intent> {
