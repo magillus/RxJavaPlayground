@@ -1,9 +1,5 @@
 apply plugin: 'com.android.application'
 
-// The me.tatarka.retrolambda builds your java or android project with Retrolambda, which backports
-// lambdas to Java 6 and 7.
-apply plugin: 'me.tatarka.retrolambda'
-
 // The android-apt plugin assists in working with annotation processors in combination with Android
 // Studio. Added for Butterknife.
 apply plugin: 'android-apt'

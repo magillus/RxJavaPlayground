@@ -15,6 +15,7 @@ import com.example.mat.rxjavaplayground.activity.DatabaseActivity;
 import com.example.mat.rxjavaplayground.activity.MultithreadingActivity;
 import com.example.mat.rxjavaplayground.activity.NetworkTestActivity;
 import com.example.mat.rxjavaplayground.activity.RxServiceActivity;
+import com.example.mat.rxjavaplayground.activity.SinglesObservableActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -89,6 +90,11 @@ public class SelectorFragment extends Fragment {
     @OnClick(R.id.btn_broadcast_receier)
     public void onBroadcastReceiver(View v) {
         startActivity(new Intent(getContext(), BroadcastActivity.class));
+    }
+
+    @OnClick(R.id.btn_single_tests)
+    public void onSingleDisposableTest(View v) {
+        startActivity(new Intent(getContext(), SinglesObservableActivity.class));
     }
 
     @Override

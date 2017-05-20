@@ -52,7 +52,9 @@
         <service
             android:name=".service.RandomService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".activity.SinglesObservableActivity"></activity>
     </application>
 
 </manifest>
