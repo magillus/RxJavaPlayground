@@ -14,6 +14,7 @@ import com.example.mat.rxjavaplayground.activity.ContentProviderActivity;
 import com.example.mat.rxjavaplayground.activity.DatabaseActivity;
 import com.example.mat.rxjavaplayground.activity.MultithreadingActivity;
 import com.example.mat.rxjavaplayground.activity.NetworkTestActivity;
+import com.example.mat.rxjavaplayground.activity.RealmActivity;
 import com.example.mat.rxjavaplayground.activity.RxServiceActivity;
 import com.example.mat.rxjavaplayground.activity.SinglesObservableActivity;
 
@@ -95,6 +96,11 @@ public class SelectorFragment extends Fragment {
     @OnClick(R.id.btn_single_tests)
     public void onSingleDisposableTest(View v) {
         startActivity(new Intent(getContext(), SinglesObservableActivity.class));
+    }
+
+    @OnClick(R.id.btn_realm_tests)
+    public void onRealmTest(View v) {
+        startActivity(new Intent(getContext(), RealmActivity.class));
     }
 
     @Override
