@@ -1,14 +1,10 @@
 apply plugin: 'com.android.application'
 
-// The android-apt plugin assists in working with annotation processors in combination with Android
-// Studio. Added for Butterknife.
-apply plugin: 'android-apt'
-
 apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.example.mat.rxjavaplayground"
         minSdkVersion 19
